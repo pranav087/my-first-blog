@@ -1,0 +1,29 @@
+{% for post in post %}
+
+    <section class="post">
+        <font color="#2471A3">
+            <h3><a class="post-title",>
+                <outputut type="number" step="any" value="0">
+                </outputut>
+
+                <span  class="post-title"
+
+                        href="post.get_absolute_url">
+
+                       {{post.title}}
+                </span>
+
+            </a></h3>
+            </font>
+
+        <p class="post-text">
+            <td class="blue">{{ post.text|linebreaks}}
+        </td>
+        </p>
+    </section>
+<style>
+body{
+    background-color: #FF5733
+}
+</style>
+{% endfor %}
